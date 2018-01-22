@@ -2,18 +2,17 @@
 # -*- coding: utf-8 -*-
 
 
-"""Fibonacci numbers module
+"""Fibonacci series module
 """
 
 
 def fib(n):
-    """Print Fibonacci series up to n
+    """Prints Fibonacci series up to n
 
     Args:
         n: High limit of the serie
 
     Returns:
-
     """
     a, b = 0, 1
     while b < n:
@@ -23,14 +22,13 @@ def fib(n):
 
 
 def fib2(n):  # return Fibonacci series up to n
-    """
+    """Calculates Fibonacci series up to n
 
     Args:
         n: High limit of the serie
 
     Returns:
         A list of the elements of the serie
-
     """
     result = []
     a, b = 0, 1
@@ -43,6 +41,7 @@ def fib2(n):  # return Fibonacci series up to n
 def main():
     """The entry point of the script
 
+    Returns:
     """
     fib(10)
     print(fib2(20))
