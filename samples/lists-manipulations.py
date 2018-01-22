@@ -7,14 +7,6 @@ def main():
 
     This function will act as an entry point for the script.
 
-    Args:
-        None
-
-    Returns:
-        None
-
-    Raises:
-        None
 
     """
     fruits = [
