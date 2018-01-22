@@ -32,10 +32,10 @@ def main():
     # Affiche le nombre de coing
     print(fruits.count('coing'))
 
-    # Affiche la postion de la premièere occurence de banane
+    # Affiche la postion de la première occurence de banane
     fruits.index('banane')
 
-    # Affiche la postion de la premièere occurence de banane à partie de l'index 4
+    # Affiche la postion de la première occurence de banane à partie de l'index 4
     fruits.index('banane', 4)
 
     # Renverse la liste et l'affiche
