@@ -38,14 +38,7 @@ def fib2(n):  # return Fibonacci series up to n
     return result
 
 
-def main():
-    """The entry point of the script
-
-    Returns:
-    """
-    fib(10)
-    print(fib2(20))
-
-
 if __name__ == '__main__':
-    main()
+    import sys
+
+    fib(int(sys.argv[1]))
