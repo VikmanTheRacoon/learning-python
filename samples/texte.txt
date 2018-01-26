@@ -1,2 +1,3 @@
 Ceci est la première ligne du fichier
-Ceci est la seconde ligne du fichier
+Ceci est la seconde ligne du fichierCeci est la troisième ligne
+('La réponse', 42)
