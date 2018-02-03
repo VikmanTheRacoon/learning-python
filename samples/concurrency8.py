@@ -5,7 +5,7 @@ import threading
 import time
 import random
 
-counter = 1
+counter = 0
 lock = threading.Lock()
 
 
@@ -36,15 +36,12 @@ def worker_b():
 
 
 def main():
-    t0 = time.time()
     thread1 = threading.Thread(target=worker_a)
     thread2 = threading.Thread(target=worker_b)
     thread1.start()
     thread2.start()
     thread1.join()
     thread2.join()
-    t1 = time.time()
-    print("Execution time {}".format(t1 - t0))
 
 
 if __name__ == '__main__':
