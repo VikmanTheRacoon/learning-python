@@ -34,11 +34,11 @@ def main():
     my_event_1 = threading.Event()
     threads_1 = []
     print('Starting threads...')
-    for i in range(4):
+    for i in range(2):
         t = threading.Thread(target=my_thread_1, args=(my_event_1,))
         t.start()
         threads_1.append(t)
-    time.sleep(2)
+    time.sleep(10)
     my_event_1.set()
     for t in threads_1:
         t.join()
