@@ -14,12 +14,12 @@ def worker_process():
 
 
 def main():
-    print("Main process: {}".format(multiprocessing.current_process().pid))
+    print("Main process started: {}".format(multiprocessing.current_process().pid))
     my_process = multiprocessing.Process(target=worker_process)
     my_process.daemon = True
     my_process.start()
     print("We can carry on as per usual and our daemon will continue to execute")
-    time.sleep(10)
+    my_process.join()
     print("Main process terminated: {}".format(multiprocessing.current_process().pid))
 
 
